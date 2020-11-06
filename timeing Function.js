@@ -25,14 +25,14 @@ function getMinutesBtHr(sTime,eTime){
 
 
 
-// pass a amount of minutes it will return in hour minute format
+// pass an amount of minutes it will return in hour minute format
 
 
 function minToHr(min){
-	let a  = min / 60;
-	let hour = Math.floor(a) * 100;
-	let b = (a % 1).toFixed(10);
-	let minute = 60 * b;
+	let getInt  = min / 60;
+	let hour = Math.floor(getInt) * 100;
+	let getFlote = (getInt % 1).toFixed(10);
+	let minute = 60 * getFlote;
 	
 	let sum = hour + minute;
 	return Math.round(sum); 
